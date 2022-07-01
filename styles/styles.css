@@ -26,7 +26,6 @@
     grid-area: 1/2/1/3;
     z-index: 1;
     justify-self: right;
-    align-self: top;
     margin-right: 20px;
 }
 #to_top {
