@@ -23,10 +23,12 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    grid-area: 1/2/1/3;
     z-index: 1;
     justify-self: right;
-    margin-right: 20px;
+    transform: scale(.7, .7);
+    position: absolute;
+    top: 10px;
+    right: -30px;
 }
 #to_top {
     background-color: var(--primary-color);
@@ -66,7 +68,7 @@
     padding: 20px;
     background-color: var(--accent1-color);
 }
-#con_logo  img {
+#consoles  img {
     height: 50px;
     width: auto;
 }
@@ -162,6 +164,7 @@
 body {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 h1 {
     font-family: var(--heading-font);
@@ -193,11 +196,10 @@ img{
 main {
     background-color: #222323;
     grid-area: 1/2/1/3;
-    padding: 10px 20%;
-    padding-bottom: 20px;
+    padding: 0 20%;
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 91vh;
+    height: 92vh;
 }
 nav {
     background-color: var(--primary-color);
@@ -237,4 +239,47 @@ footer {
     z-index: 1;
     background-color: var(--primary-color);
     border-top: 2px solid var(--accent1-color);
+}
+@media only screen and (orientation: portrait) {
+    #content {
+        display: block;
+    }
+    #cards {
+        flex-direction: column;
+        padding: 50px;
+    }
+    #social {
+        flex-direction: column;
+    }
+    #additional, #consoles, #navigation {
+        display: none;
+    }
+    #logo {
+        position: relative;
+        transform: scale(1,1);
+        background-color: #222323;
+        top: 0;
+        right: 0;
+    }
+    body {
+        height: auto;
+    }
+    header {
+        font-size: small;
+        background-color: #222323;
+    }
+    main {
+        padding: 20px;
+    }
+    nav {
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+    nav h3:hover #navigation, nav h3:hover #additional, nav h3:hover #consoles {
+        display: block;
+    }
+        
+    
 }
