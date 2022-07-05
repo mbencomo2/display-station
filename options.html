@@ -9,7 +9,11 @@
 </head>
 <body>
     <div id="content">
-        <nav>
+        <div id="logo">
+            <img class="logo_img" src="images/Logo.png" alt="Logo">
+            <h1>DisplayStation</h1>
+        </div>
+        <nav class="sidenav">
             <div class="padding"></div>
             <h3>Navigation</h3>
             <hr>
@@ -26,7 +30,7 @@
                 <li><a href="https://www.youtube.com/watch?v=dym6XD3-8qw&list=PLTNBVisVMbSR1ZDDQRgjg6S9D2YQ4rwnZ&index=7">Retro Gaming on Modern TVs</a></li>
                 <li><a href="#">More Links Soon</a></li>
             </ul>
-            <div id="con_logo">
+            <div id="consoles">
                 <ul>
                     <li><a href="https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System" target="_blank"><img  src="images/190px-Super_Famicom_logo.svg.png" alt="SNES Logo"></a></li>
                     <li><a href="https://en.wikipedia.org/wiki/PlayStation" target="_blank"><img src="images/Playstation_logo_colour.svg.png" alt="PS Logo"></a></li>
@@ -35,11 +39,29 @@
                 </ul>
             </div>
         </nav>
-        <div id="logo">
-            <h1>DisplayStation</h1>
-            <img class="logo_img" src="images/Logo.png" alt="Logo">
-        </div>
+        <nav class="mobile_nav">
+            <a href="index.html">Home</a>
+            <hr>
+            <a href="options.html">Know Your Options</a>
+            <hr>
+            <a href="tvconnections.html">TV Connections</a>
+            <hr>
+            <a href="troubleshooting.html">Toubleshooting</a>
+        </nav>
         <main>
+            <section id="hero">
+                <h2>Know your Options</h2>
+                <img src="images/options_hero.png" alt="hero image">
+            </section>
+            <p style="color: var(--accent2-color);text-align: center;font-size: 16pt;">
+                What video outputs your console supports and what they hook up to.
+            </p>
+            <p>
+                Retro video game consoles have become more mainstream in recent years due to the cheaper nature of the second hand market and 
+                people's hoarding habits leaving old consoles tucked away in various hiding places. The biggest obstacle usually faced by 
+                would be retro gamers is the difficulty of playing older consoles on new TVs. Many of these machines were not meant to be 
+                played on anything newer than a CRT, and those are becoming increasingly more difficult to obtain.
+            </p>
             <div class="insert clearfix">
                 <h3>Retro Consoles</h3>
                 <img src="images/nes.jpg" alt="NES">
@@ -49,14 +71,6 @@
                     by this rule.
                 </p>
             </div>
-            <section>
-                <p>
-                    Retro video game consoles have become more mainstream in recent years due to the cheaper nature of the second hand market and 
-                    people's hoarding habits leaving old consoles tucked away in various hiding places. The biggest obstacle usually faced by 
-                    would be retro gamers is the difficulty of playing older consoles on new TVs. Many of these machines were not meant to be 
-                    played on anything newer than a CRT, and those are becoming increasingly more difficult to obtain.
-                </p>
-            </section>
             <div class="insert clearfix">
                 <h3>Cathode Ray Tube (CRT)</h3>
                 <img src="images/CRTs.jpg" alt="CRTs">
@@ -66,6 +80,119 @@
                     sometimes used by game developers to make their games harder, utlizing the low input latency to increase difficulty in timing.
                 </p>
             </div>
+            <p>
+                That being said, many modern TVs still contain legacy video inputs. You might recognize these as the Yellow/Red/White plugs 
+                that used to be common on video equipment from video recorders to plug-and-play TV games. These are <b>Composite</b> video cables, and 
+                are the most common variety of video cable. Old video game consoles originally only had composite outputs, with the Nintendo 64 and 
+                Playstation being the last consoles to only support composite output. 
+            </p>
+            <p>
+                Some consoles had extra cables you could buy that had a higher picture quality if your tv supported it. These include <b>Component</b> and <b>RGB SCART</b>. 
+                These types of cables are referred to as RGB, since they send color information separate from the brightness information. As such, there are multiple pins 
+                and cables in each. Component cables are easy to spot since they have red, green, and blue cables along with red/white audio cables, while Scart cables had 
+                wierd shaped plugs with lots of pins in them. If you live in the US you likely haven't seen SCART before since only Europe and Japan adopted that standard.
+            </p>
+            <div class="insert clearfix">
+                <h3>Composite Video</h3>
+                <img src="images/composite.jpg" alt="composite video cables">
+                <p>
+                    Also commonly referred to as RCA cables, only because RCA made lots of these. The benefits of composite video are the low bandwidth 
+                    needed to transmit video and the simplicity of having only one cable for video. The brightness and color information are encoded in 
+                    the signal through one cable, so the quality take a sharp dive. Unless your TV has a nice sharpening filter, the image will appear 
+                    "muddy" or washed out, with pixels being very fuzzy and blurry.
+                </p>
+            </div>
+            <div class="insert clearfix">
+                <h3>Component Video</h3>
+                <img src="images/component.jpg" alt="component video cables">
+                <p>
+                    These cables are common with more expensive electronics. HD Retrovision sells 3rd part component cables for many consoles now, and the increase 
+                    in quality from composite is incredible. Three times the bandwidth means three times the clarity! Be wary, since not all TVs support these cables. 
+                    CRT TVs rarely did, and even now many mordern TVs are phasing them out to make circut room for more digital sources.
+                </p>
+            </div>
+            <div class="insert clearfix">
+                <h3>RGB SCART</h3>
+                <img src="images/scart.jpg" alt="scart video cables">
+                <p>
+                    Many retro enthusiasts claim that SCART produces the sharpest and most vibrant image of any video cable out there. They are most likely right, 
+                    considering the number of pins available, but at the end of the day it depends on the TV you use. US gamers will have almost never seen these since 
+                    only PAL and Japanese markets adopted SCART, but there are conversion kits and mods available for popular TVs and consoles so you can go this route. 
+                    For most players, component video will be hardly distinguishable from SCART.
+                </p>
+            </div>
+            <p>
+                Here is a quick table of popular consoles and their supported video outputs.
+            </p>
+            <table>
+                <tr>
+                    <th>Console</th>
+                    <th>Year</th>
+                    <th>Video Types</th>
+                </tr>
+                <tr>
+                    <td>Atari 2600</td>
+                    <td>1977</td>
+                    <td>RF / Coaxial</td>
+                </tr>
+                <tr>
+                    <td>Nintendo Entertainment System</td>
+                    <td>1983</td>
+                    <td>RF / Composite</td>
+                </tr>
+                <tr>
+                    <td>Sega Master System</td>
+                    <td>1985</td>
+                    <td>RF / Composite</td>
+                </tr>
+                <tr>
+                    <td>Sega Genesis</td>
+                    <td>1988</td>
+                    <td>RF/ Composite</td>
+                </tr>
+                <tr>
+                    <td>Super Nintendo Entertainment System</td>
+                    <td>1990</td>
+                    <td>RF / Composite / S-Video / Component  </td>
+                </tr>
+                <tr>
+                    <td>Sony Playstation</td>
+                    <td>1994</td>
+                    <td>RF / Composite / S-Video / Component </td>
+                </tr>
+                <tr>
+                    <td>Nintendo 64</td>
+                    <td>1996</td>
+                    <td>Composite / S-Video</td>
+                </tr>
+                <tr>
+                    <td>Sega Dreamcast</td>
+                    <td>1998</td>
+                    <td>Composite / S-Video / VGA</td>
+                </tr>
+                <tr>
+                    <td>Sony Playstation 2</td>
+                    <td>2000</td>
+                    <td>RF / Composite / S-Video / Component / SCART*</td>
+                </tr>
+                <tr>
+                    <td>Nintendo Gamecube</td>
+                    <td>2001</td>
+                    <td>Composite / S-Video / Component /SCART*</td>
+                </tr>
+                <tr>
+                    <td>Microsoft XBOX</td>
+                    <td>2001</td>
+                    <td>Composite / S-Video* / Component* / SCART*</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td>*Additional Accessories Required</td>
+                </tr>
+            </table>
+            <a href="tvconnections.html" target="_blank" class="nav_button">TV Connections</a>
+            <a href="troubleshooting.html" target="_blank" class="nav_button" style="float: right;">Troubleshooting</a>
         </main>
         <footer>
             <div>
@@ -73,6 +200,7 @@
                 <p style="font-size: 8pt;">All registered Trademarks property of their respective owners.</p>
             </div>
             <img class="logo_img" src="images/Logo.png" alt="Logo">
+            <a href="/site-plan.html">Site Plan</a>
             <ul id="social">
                 <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
                 <li><a href="#"><img src="images/reddit.jpg" alt=""></a></li>
