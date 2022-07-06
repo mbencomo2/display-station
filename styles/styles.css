@@ -26,6 +26,9 @@
     right: 0;
     transform: scale(80%,80%);
 }
+#logo h1 {
+    text-shadow: 5px 5px 2px #000000;
+}
 #hero {
     display: grid;
     grid-template: 1fr / 1fr;
@@ -115,7 +118,7 @@
     text-align: center;
     color: var(--accent2-color);
     border-radius: 5px;
-    font-size: 1.2em;
+    font-size: 1vw;
 }
 .insert {
     background-color: #4A4782;
@@ -191,7 +194,6 @@ a:hover {
 img{
     display: block;
     margin: 20px auto;
-    width: 100%;
 }
 table {
     width: 100%;
@@ -217,7 +219,7 @@ th {
 }
 main {
     background-color: #222323;
-    padding: 30px 10%;
+    padding: 30px 20%;
     padding-bottom: 100px;
     margin-left: var(--sidebar-width);
     height: min-content;
@@ -289,6 +291,9 @@ footer {
         padding: 20px;
         border-top: 2px solid var(--accent2-color);
     }
+    nav {
+        font-size: 1.5em;
+    }
     #logo {
         position: relative;
         color: var(--accent2-color);
@@ -296,14 +301,18 @@ footer {
         width: min-content;
         margin: 0 auto;
     }
+    #logo h1 {
+        font-size: 6vw;
+    }
     #hero {
         margin: 30px auto;
-        width: 70%;
+        max-width: 800px;
     }
     #hero h1{
         text-align: center;
         padding: 5px;
         margin: 20px;
+        font-size: 1.1em;
     }
     #social {
         flex-direction: column;
@@ -331,6 +340,9 @@ footer {
         margin: 0 auto;
         float: none;
     }
+    .card h2 {
+        font-size: 1em;
+    }
     .nav_button {
         margin: 30px auto;
     }
@@ -338,7 +350,7 @@ footer {
 @media screen and (orientation: portrait) {
     #cards {
         flex-direction: column;
-        width: 60%;
+        width: 70%;
         margin: 0 auto;
     }
 }
