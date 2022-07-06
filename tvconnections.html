@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>TV Connections</title>
+    <title>Televisions</title>
 </head>
 <body>
     <div id="content">
@@ -19,8 +19,8 @@
             <hr>
             <ul id="nav_links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="options.html">Know Your Options</a></li>
-                <li><a href="tvconnections.html">TV Connections</a></li>
+                <li><a href="cables.html">Cables</a></li>
+                <li><a href="tvconnections.html">Televisions</a></li>
                 <li><a href="troubleshooting.html">Toubleshooting</a></li>
             </ul>
             <h3>Additional Links</h3>
@@ -28,7 +28,8 @@
             <ul id="add_links">
                 <li><a href="https://retrogaming.hazard-city.de/">Deinterlacing+Scaling</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dym6XD3-8qw&list=PLTNBVisVMbSR1ZDDQRgjg6S9D2YQ4rwnZ&index=7">Retro Gaming on Modern TVs</a></li>
-                <li><a href="#">More Links Soon</a></li>
+                <li><a href="https://www.youtube.com/watch?v=sJFnWZH5FXc">How Atari displayed graphics / TV scanlines</a></li>
+                <li><a href="https://www.hdretrovision.com/blog/2014/8/21/behind-the-pixels-scart-rgb">HD Retrovision - Behind the Pixels</a></li>
             </ul>
             <div id="consoles">
                 <ul>
@@ -42,70 +43,83 @@
         <nav class="mobile_nav">
             <a href="index.html">Home</a>
             <hr>
-            <a href="options.html">Know Your Options</a>
+            <a href="cables.html">Cables</a>
             <hr>
-            <a href="tvconnections.html">TV Connections</a>
+            <a href="tvconnections.html">Televisions</a>
             <hr>
             <a href="troubleshooting.html">Toubleshooting</a>
+            <hr>
+            <a href="links.html">Further Reading</a>
         </nav>
         <main>
             <section id="hero">
                 <h1>TV Connections</h1>
                 <img src="images/tv_hero.jpg" alt="hero image">
+                <p style="color: var(--accent2-color);text-align: center;font-size: 16pt;">
+                    Understanding what video types your TV supports.
+                </p>
             </section>
-            <p style="color: var(--accent2-color);text-align: center;font-size: 16pt;">
-                Understanding what video types your TV supports.
+            <hr>
+            <p>
+                Television Technology has changed greatly in just the past 20 years. Back when most retro consoles were sold the most common kind of display was 
+                the <b>Cathode Ray Tube</b> which was big, heavy, and potentially dangerous should something go wrong. Even though they were very blurry and didn't 
+                use pixels as we are familiar with them, they had one big advantage. CRT displays had very little latency and it was easy to display images and video 
+                on them which allowed for a lot of flexible, inexpensive video solutions as the technology got better. Developers had to design their games to be 
+                playable on these imprecise devices, and often times visual quality was compromised depending on each device's quirks.
+            </p>
+            <div class="insert clearfix">
+                <h3>Cathode Ray Tube (CRT)</h3>
+                <img src="images/CRTs.jpg" alt="CRTs">
+                <p>
+                    These are TVs that employed CRT technology to draw an image on a phosphor screen. Televisions using this 
+                    technology accept anologue video signals and render them on the screen with minimal lag due to minimal image processing. This was 
+                    sometimes used by game developers to make their games harder, utlizing the low input latency to increase difficulty in timing.
+                </p>
+            </div>
+            <p>
+                In the early 2000s a new type of display was created, the LCD. These were much smaller, had a more consistent quality, and didn't produce nearly 
+                as many visual artifacts. These, along with LED displays, would replace the CRT as the standard, but that came with some drawbacks. Most LCD/LED 
+                displays now are digital, and while there were analogue LCD displays made, they were very expensive and rare.
             </p>
             <p>
-                Before digital video, there were several video standards that all 
-                had their own quirks and features. These include:
-            </p>
-            <ul>
-                <li>RF/Coaxial - Poor Quality</li>
-                <li>Composite - Standard Quality</li>
-                <li>S-Video - Better Quality</li>
-                <li>Component - Best Quality</li>
-                <li>RGB Scart - Best Quality</li>
-            </ul>
-            <p>If your console is a Wii/XBOX 360/PS2 or older, you will have these cables instead of HDMI or DisplayPort.</p>
-            <img src="images/cables.jpg" alt="Cables" style="width: 100%;">
-            <p>
-                Now, not all cables produce the same picture quality. There is a lot of math and science behind it, but all you need to know is that <b>composite 
-                video</b> (the single yellow cable with red/white audio) is the cheapest and produces a really blurry picture. It is the common denominator that 
-                almost all video devices used, since it is comparable to a standard tv signal. Your tv will have a yellow plug labeled "Composite" with a red 
-                and a white plug nearby for audio.
-            </p>
-            <p>
-                You have a cable that came with your console. There may be a chance you have a <b>component cable</b> (red/green/blue cables with red/white audio) 
-                available. Those will produce a much clearer picture becuase there are 3 times as much bandwidth for the signal. The only problem is not all TVs 
-                (especially old CRTs) have this kind of plug available. Use it when available on both your console and TV, otherwise you might need to stick with composite.
-            </p>
-            <p>
-                The last common plug out there is <b>S-Video</b>. Picture quality wise it sits between composite and component video, while being more common than component. 
-                it is a round plug with 5 pins inside that was used by some video players and camcorders. If you have a 3rd party video cable it might have an S-Video 
-                cable, and use it if you are able. Modern TVs don't use S-Video at all anymore, so don't expect to be able to connect your console to your flat screen 
-                with S-Video unless you are lucky enough to have a TV with S-Video input.
-            </p>
-            <p>
-                <b>RGB Scart</b> was a standard available in Japan and Europe, but was never used in the US. If you buy a console from one of those regions it might be 
-                that you have a scart output, but if your TV is made in the US and was made in the last 20 years than you will definately not have a scart input.
+                In order to stay backwards compatible, many modern TVs still contain legacy video inputs. Depending on the brand and price, your TV may or may not have one all 
+                of the available connections. Most TVs will have at least one composite video input. If you can find a TV that has component in and 
+                even S-Video in, you will have many more options to improve the video quality of your old games.
             </p>
             <div class="insert clearfix">
                 <h3>TV Inputs</h3>
                 <img src="images/tv_inputs.jpg" alt="TV Inputs">
                 <p>
-                    TVs are made to accept all kinds of inputs unless the are old or cheap. They are generally color coded, so just match the colors and you will be fine. 
-                    Y/Pb/Pr is the official name for component cables, with Y being green, Pb being blue, and Pr being red. The TV pictured here has a SCART connector, 
-                    featured on the far left.
+                    TVs are made to accept all kinds of inputs unless the are old or cheap. They are generally color coded, so just match the colors. 
+                    The TV pictured here has a SCART connector, featured on the far left.
                 </p>
             </div>
             <p>
-                Connecting the cables is simple, just plug the colored cables into the corresponding holes. Don't forget to change the TV's source to the appropriate input
-                or else you won't get a picture even if it is plugged in correctly!  At that point you are ready to start enjoying your older games again. If you are still 
-                experiencing issues with lag or want a better picture than composite has to offer, than check out the <a href="troubleshooting.html">Troubleshooting Page</a> 
-                where we will cover some common questions.
+                Connecting the cables is simple, just plug the colored cables into the corresponding holes. Be careful, as composite and component cables share the same 
+                sized inputs, so you can accidently plug a composite cable into a component input, or vice versa. This will not usually cause any damage, other than having 
+                the picture look wierd or not showing up at all. Otherwise, S-Video is made to fit only one way, and Scart has such a unique shape that it is impossible to 
+                insert it incorrectly.
             </p>
-            <a href="options.html" class="nav_button">TV Connections</a>
+            <p>
+                Once you have everything plugged in and you change the TV to the proper channel/input you can beginning playing the game. Pay attention to the colors on screen 
+                and how long it takes for you to notice your inputs. You made need to open your TV's settings and change a couple settings. Modern TVs like to "enhance" the 
+                image for better viewing, but this can add up to 3-6 frames of delay between what the console shows and when you actually see it. There is a simple fix, fortunately.
+            </p>
+            <p>
+                If you have a modern flat screen TV, try searching for a "game mode". That will usually disable a lot of features to reduce the latency between frames. Lowering or 
+                disabling sharpness and color enhancements can also help improve latency.
+            </p>
+            <div class="insert clearfix">
+                <h3>TV Settings</h3>
+                <img src="images/tv_settings.jpg" alt="TV Inputs">
+                <p>
+                    Spend a bit of time looking through your settings and see if changing anything makes the picture quality improve. Everyone's preferences are different, but 
+                    you may find that less sharpness looks better, or that increasing the saturation helps make colors render better. Also, be prepared to change the brigtness 
+                    and contrast settings between games, since many developers didn't have a standard, instead they would include a screen in the game settings to help you adjust 
+                    your TV appropriate to the game!
+                </p>
+            </div>
+            <a href="cables.html" class="nav_button">Cables</a>
             <a href="troubleshooting.html" class="nav_button" style="float: right;">Troubleshooting</a>
         </main>
         <footer>
@@ -113,7 +127,6 @@
                 <h2 style="margin-bottom: 0;">DisplayStation &copy; Matt Bencomo</h2>
                 <p style="font-size: 8pt;">All registered Trademarks property of their respective owners.</p>
             </div>
-            <img class="logo_img" src="images/Logo.png" alt="Logo">
             <a href="/site-plan.html">Site Plan</a>
             <ul id="social">
                 <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>

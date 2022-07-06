@@ -20,11 +20,11 @@
 #logo {
     display: flex;
     flex-direction: row;
+    align-items: center;
     color: var(--accent2-color);
     position: fixed;
-    margin: 0 0;
-    transform: scale(80%,80%);
     right: 0;
+    transform: scale(80%,80%);
 }
 #hero {
     display: grid;
@@ -39,9 +39,7 @@
 #hero h1 {
     grid-area: 1/1/1/2;
     z-index: 1;
-    justify-self: center;
-    align-self: center;
-    font-size: 48pt;
+    place-self: center;
     border-radius: 5px;
     padding: 20px;
     background-color: var(--accent1-color);
@@ -61,30 +59,17 @@
     padding: 0;
 }
 #social img {
-    width: 50%;
+    width: 30px;
+    margin: 0 10px;
 }
 #cards {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-#to_top {
-    background-color: var(--primary-color);
-    border: 2px solid var(--accent1-color);
-    border-radius: 5px;
-    color: var(--accent2-color);
-    float: right;
-    position: fixed;
-    right: 50px;
-    bottom: 150px;
-    transition: background-color .35s ease-out;
-}
-#to_top a {
-    display: block;
-    padding: 20px;
-}
-#to_top a:hover {
-    background-color: #4e4e4e;
+#videos {
+    width: min-content;
+    margin: 0 auto;
 }
 .sidenav {
     height: 100%;
@@ -127,10 +112,10 @@
 }
 .card h2 {
     grid-area: 2/1/2/3;
-    width: 100%;
     text-align: center;
     color: var(--accent2-color);
     border-radius: 5px;
+    font-size: 1.2em;
 }
 .insert {
     background-color: #4A4782;
@@ -140,22 +125,18 @@
     margin: 10px 0;
     overflow: hidden;;
 }
-.insert h3 {
-    margin-top: 0;
-}
 .insert img {
     float: left;
-    width: 100px;
+    width: 200px;
     margin-right: 10px;
     overflow: auto;
 }
 .insert p {
-    font-size: 12pt;
     color: var(--secondary-color);
 }
 .logo_img {
     display: inline;
-    max-width: 80px;
+    width: 80px;
     height: 80px;
 }
 .clearfix::after {
@@ -176,11 +157,14 @@
     transform: scale(1.2, 1.2);
 }
 * {
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 body {
     margin: 0;
     padding: 0;
+    background-color: var(--primary-color);
 }
 h1 {
     font-family: var(--title-font);
@@ -192,7 +176,6 @@ h2, h3, h4, h5, h6 {
 }
 p {
     font-family: var(--paragraph-font);
-    font-size: 14pt;
     color: white;
 }
 a {
@@ -207,17 +190,18 @@ a:hover {
 }
 img{
     display: block;
-    width: 50%;
-    margin: 0 auto;
+    margin: 20px auto;
+    width: 100%;
 }
 table {
     width: 100%;
     text-align: center;
     border-collapse: collapse;
+    margin-top: 20px;
 }
 th, tr, td {
     border: 2px solid var(--accent1-color);
-    padding: 20px;
+    padding: 10px;
     font-family: var(--paragraph-font);
 }
 td {
@@ -229,22 +213,34 @@ tr:hover {
 th {
     background-color: var(--accent1-color);
     color: var(--secondary-color);
-    font-size: larger;
 
 }
 main {
     background-color: #222323;
-    padding: 50px 20%;
+    padding: 30px 10%;
     padding-bottom: 100px;
     margin-left: var(--sidebar-width);
+    height: min-content;
     overflow-y: auto;
+    font-size: 1.3em;
+}
+main p {
+    padding: 10px 0;
+}
+main ul {
+    color: white;
+    list-style-type: disc;
+    font-family: var(--paragraph-font);
+    width: max-content;
+    margin: 20px auto;
 }
 nav {
     background-color: var(--primary-color);
     border-right: 2px solid var(--accent1-color);
-    padding: 10px;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
 }
 nav a {
     display: block;
@@ -266,60 +262,54 @@ nav ul {
     list-style-type: none;
     padding: 0;
 }
-main ul {
-    color: white;
-    list-style-type: disc;
-    font-family: var(--paragraph-font);
-    font-size: 16pt;
-}
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 83%;
-    padding-left: 20px;
-    margin-left: var(--sidebar-width);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 83%;
+    padding: 20px;
+    margin-left: var(--sidebar-width);
     background-color: var(--primary-color);
     border-top: 2px solid var(--accent1-color);
+    font-size: 1.5em
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1300px) {
     main {
         margin: auto;
-        padding: 5px 10px;
+        padding: 5px 20px;
+        font-size: 1.2em;
     }
     footer {
         position: relative;
         margin: auto;
-        width: auto;
-        padding: 0 20px;
+        width: 100%;
+        padding: 20px;
+        border-top: 2px solid var(--accent2-color);
     }
     #logo {
-        display: block;
-        background-color: var(--primary-color);
+        position: relative;
         color: var(--accent2-color);
-        position: sticky;
-        top: 0;
-        right: auto;
-        transform: scale(1,1);
-    }
-    #logo img, h1 {
-        float: left;
+        transform: none;
+        width: min-content;
+        margin: 0 auto;
     }
     #hero {
-        margin-top: 100px;
+        margin: 30px auto;
+        width: 70%;
     }
     #hero h1{
+        text-align: center;
         padding: 5px;
-        font-size: 24pt;
+        margin: 20px;
     }
     #social {
         flex-direction: column;
     }
-    #to_top {
-        display: none;
+    #social img {
+        padding: 10px auto;
     }
     .sidenav {
         display: none;
@@ -337,11 +327,18 @@ footer {
         text-align: center;
     }
     .insert img {
-        width: 100%;
+        width: 60%;
+        margin: 0 auto;
         float: none;
     }
-    img {
-        width: 100%;
+    .nav_button {
+        margin: 30px auto;
     }
-
+}
+@media screen and (orientation: portrait) {
+    #cards {
+        flex-direction: column;
+        width: 60%;
+        margin: 0 auto;
+    }
 }

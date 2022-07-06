@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <title>TV Connections</title>
+    <title>Troubleshooting</title>
 </head>
 <body>
     <div id="content">
-        <div id="logo">
-            <img class="logo_img" src="images/Logo.png" alt="Logo">
+        <div id="logo" class="clearfix">
             <h1>DisplayStation</h1>
+            <img class="logo_img" src="images/Logo.png" alt="Logo">
         </div>
         <nav class="sidenav">
             <div class="padding"></div>
@@ -19,8 +19,8 @@
             <hr>
             <ul id="nav_links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="options.html">Know Your Options</a></li>
-                <li><a href="tvconnections.html">TV Connections</a></li>
+                <li><a href="cables.html">Cables</a></li>
+                <li><a href="tvconnections.html">Televisions</a></li>
                 <li><a href="troubleshooting.html">Toubleshooting</a></li>
             </ul>
             <h3>Additional Links</h3>
@@ -28,43 +28,44 @@
             <ul id="add_links">
                 <li><a href="https://retrogaming.hazard-city.de/">Deinterlacing+Scaling</a></li>
                 <li><a href="https://www.youtube.com/watch?v=dym6XD3-8qw&list=PLTNBVisVMbSR1ZDDQRgjg6S9D2YQ4rwnZ&index=7">Retro Gaming on Modern TVs</a></li>
-                <li><a href="#">More Links Soon</a></li>
+                <li><a href="https://www.youtube.com/watch?v=sJFnWZH5FXc">How Atari displayed graphics / TV scanlines</a></li>
+                <li><a href="https://www.hdretrovision.com/blog/2014/8/21/behind-the-pixels-scart-rgb">HD Retrovision - Behind the Pixels</a></li>
             </ul>
             <div id="consoles">
                 <ul>
-                    <li><a href="https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System" target="_blank"><img  src="images/190px-Super_Famicom_logo.svg.png" alt="SNES Logo"></a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/PlayStation" target="_blank"><img src="images/Playstation_logo_colour.svg.png" alt="PS Logo"></a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Xbox_(console)" target="_blank"><img src="images/Xbox_original_logo_black.png" alt="XBox Logo"></a></li>
-                    <li><a href="https://en.wikipedia.org/wiki/Dreamcast" target="_blank"><img src="images/Dreamcast_logo.svg.png" alt="Dreamcast Logo"></a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Super_Nintendo_Entertainment_System"><img  src="images/190px-Super_Famicom_logo.svg.png" alt="SNES Logo"></a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/PlayStation"><img src="images/Playstation_logo_colour.svg.png" alt="PS Logo"></a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Xbox_(console)"><img src="images/Xbox_original_logo_black.png" alt="XBox Logo"></a></li>
+                    <li><a href="https://en.wikipedia.org/wiki/Dreamcast"><img src="images/Dreamcast_logo.svg.png" alt="Dreamcast Logo"></a></li>
                 </ul>
             </div>
         </nav>
         <nav class="mobile_nav">
             <a href="index.html">Home</a>
             <hr>
-            <a href="options.html">Know Your Options</a>
+            <a href="cables.html">Cables</a>
             <hr>
-            <a href="tvconnections.html">TV Connections</a>
+            <a href="tvconnections.html">Televisions</a>
             <hr>
             <a href="troubleshooting.html">Toubleshooting</a>
+            <hr>
+            <a href="links.html">Further Reading</a>
         </nav>
         <main>
-            <h2>Troubleshooting</h2>
+            <section id="hero">
+                <h1>Troubleshooting</h1>
+                <img src="images/trouble_hero.jpg" alt="hero image">
+                <p style="color: var(--accent2-color);text-align: center;font-size: 16pt;">
+                    Common Questions and Answers
+                </p>
+            </section>
             <ul id="Questions">
-                <li><a href="#Q1">Text is hard to read.</a></li>
-                <li><a href="#Q2">The image is "muddy" and colors blur together.</a></li>
-                <li><a href="#Q3">I have serious input lag.</a></li>
+                <li><a href="#Q1">The image is "muddy" and colors blur together.</a></li>
+                <li><a href="#Q2">I have serious input lag.</a></li>
+                <li><a href="#Q3">My TV does not have analogue inputs.</a></li>
             </ul>
             <hr>
-            <h3 id="Q1">Q: Text is hard to read.</h3>
-            <p>
-                <b>A:</b> Most TVs will apply some image processing to make TV and movies look "better". Typically they sharpen the image by adding extra 
-                color around edges and other techniques so when you are sitting far away the differences in color are more distinct. The problem 
-                with retro games is they are typically low resolution and designed for a blurry CRT, so the extra processing just messing things 
-                up even more. <br><br>Try digging through your TV's settings and disable sharpening and other post-processing. It might make a 
-                big difference.
-            </p>
-            <h3 id="Q2">Q: The image is "muddy" and colors blur together.</h3>
+            <h3 id="Q1">Q: The image is "muddy" and colors blur together.</h3>
             <img src="images/comparison.jpg" alt="Comparison">
             <p>
                 <b>A:</b> Understand that not all video connections output the same quality. From the figure above you can get a feel for some ot the 
@@ -73,7 +74,7 @@
                 The only ways to fix this is to either get a better cable type or purchase a device that can process the image instead of your TV. These 
                 can be both upscalers and de-interlacers that will convert the console's output to digital but they can be very expensive.
             </p>
-            <h3 id="Q3">Q: I have serious input lag.</h3>
+            <h3 id="Q2">Q: I have serious input lag.</h3>
             <p>
                 <b>A:</b> Developers of older games wanted to make their games as tough as nails to increase play time, and took advantage of CRT TVs having almost 
                 no image latency to push button timings to the extreme. Modern TVs are designed to try and "improve" the picture quality, but at the cost 
@@ -81,29 +82,27 @@
                 The best thing to do is see if your TV has a "gaming" mode that prioritizes low latency for the best experience playing fighting games, multiplayer 
                 games, or other games that require low input lag.
             </p>
-            <h3 id="Q4">Q: My TV does not have analogue inputs.</h3>
+            <h3 id="Q3">Q: My TV does not have analogue inputs.</h3>
             <img src="images/framemeister.jpg" alt="Framemeister"><img src="images/OSSC.jpg" alt="OSSC">
             <p>
                 Many dedicated fans have created devices that are designed to upscale the image to a higher resolution and also add extra processing like adding 
-                or removing scanlines as well as other fancy features. These are devices that sit between the console and the TV, and range in size, features, 
-                and price <br><br>
-                Check out hazard-city's <a href="http://retrogaming.hazard-city.de/" target="_blank">website</a> if you want to learn more about specific devices and what they 
-                <a href="https://www.retrotink.com/product-page/2x-mini" target="_blank">RetroTink 2x</a> , 
-                or <a href="https://videogameperfection.com/products/open-source-scan-converter/" target="_blank">OSSC</a>.
+                or removing scanlines as well as other fancy features. These are devices that sit between the console and the TV, and range in features 
+                and price
             </p>
-           
-            <a href="options.html" target="_blank" class="nav_button">Troubleshooting</a>
-            <a href="tvconnections.html" target="_blank" class="nav_button" style="float: right;">TV Connections</a>
-            <div id="to_top">
-                <a href="#logo">Back to Top</a>
-            </div>
+            <p>
+                Check out hazard-city's <a href="http://retrogaming.hazard-city.de/" target="_blank">website</a> if you want to learn more about specific devices 
+                and what they can do for you. I recommend getting either the <a href="https://www.retrotink.com/product-page/2x-mini" target="_blank">RetroTink 2x</a> 
+                or <a href="https://videogameperfection.com/products/open-source-scan-converter/" target="_blank">OSSC</a>. The RetroTink 5x gets an honorable mention, 
+                but it is really expensive.
+            </p>
+            <a href="cables.html" class="nav_button">Cables</a>
+            <a href="tvconnections.html" class="nav_button" style="float: right;">Televisions</a>
         </main>
         <footer>
             <div>
                 <h2 style="margin-bottom: 0;">DisplayStation &copy; Matt Bencomo</h2>
                 <p style="font-size: 8pt;">All registered Trademarks property of their respective owners.</p>
             </div>
-            <img class="logo_img" src="images/Logo.png" alt="Logo">
             <a href="/site-plan.html">Site Plan</a>
             <ul id="social">
                 <li><a href="#"><img src="images/facebook.png" alt="Facebook"></a></li>
