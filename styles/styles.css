@@ -294,6 +294,9 @@ footer {
     nav {
         font-size: 1.5em;
     }
+    img {
+        width: 80%;
+    }
     #logo {
         position: relative;
         color: var(--accent2-color);
