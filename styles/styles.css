@@ -81,6 +81,7 @@
     z-index: 1;
     top: 0;
     left: 0;
+    overflow-y: auto;
 }
 .mobile_nav {
     display: none;
@@ -297,6 +298,10 @@ footer {
     img {
         width: 80%;
     }
+    iframe {
+        width: 350px;
+        height: 300px;
+    }
     #logo {
         position: relative;
         color: var(--accent2-color);
@@ -327,16 +332,25 @@ footer {
         display: none;
     }
     .mobile_nav {
-        display: block;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        align-items: center;
         background-color: var(--primary-color);
+        border-top: 2px solid var(--accent2-color);
         border-bottom: 2px solid var(--accent2-color);
         border-right: 0;
-        padding: 0;
+        padding: 5px 0;
     }
     .mobile_nav a{
         display: block;
         padding: 10px;
         text-align: center;
+    }
+    .mobile_nav span {
+        color: var(--accent2-color);
+        font-size: 24pt;
     }
     .insert img {
         width: 60%;
